@@ -1,0 +1,666 @@
+/*
+{
+	outline: 1px solid red;
+}*/
+
+body
+{
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+  	overflow-x: hidden; /*this may temporary fix only*/
+}
+
+li a span .material-icons
+{
+	display: inline-flex;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+.brand-logo img
+{
+	padding: 10px;
+}
+
+.landing-section
+{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #e64a19;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: auto;
+	color: #fafafa;
+	overflow: hidden;
+	animation: transiti 1s linear;
+	transition: all 1s ease-in-out;
+}
+
+.cont-product
+{
+	animation: transiti 0.7s ease-in-out;
+}
+
+@keyframes transiti {
+	0% {
+		transform: translateY(-10%);
+		opacity: 0;
+	}
+
+	100%{
+		transform: translateY(0);
+		opacity: 1;  
+	}
+}
+
+.landing-wrapper .left-inwrapper
+{
+	padding-top: 130px;
+	padding-left: 60px;
+	height: 670px;
+	width: auto;
+}
+
+.landing-wrapper .right-inwrapper
+{
+	height: 670px;
+	width: auto;
+	right: -4% !important;
+	position: relative;
+}
+
+.landing-wrapper .right-inwrapper .slide img
+{
+	border-radius: 10px;
+	height: 100%;
+}
+
+.landing-wrapper .right-inwrapper .slide
+{
+	margin-top: 100px;
+	height: 420px;
+	width: auto;
+	position: absolute;
+	outline: none;
+}
+
+.svg1
+{
+	margin-top: -30px;
+}
+
+.svg2
+{
+	margin-bottom: -70px;
+}
+.svg3
+{
+	margin-top: -30px;
+}
+
+.svg4
+{
+	margin-bottom: -70px;
+}
+
+.svg5
+{
+	margin-top: -30px;
+}
+
+#btnkatalog:hover
+{
+	transform: scale(1.2);
+}
+
+.popular-section
+{
+	height: 100%;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.popular-section h2
+{
+	width: 100%;
+	text-align: center;
+}
+
+.popular-section p
+{
+	padding: 0 4%;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.popular-section > .wrapper
+{
+	width: 100%;
+	display: block;
+	padding: 2% 2%;
+}
+
+.popular-section > .wrapper .card
+{
+	background-color: #e0e0e0;
+	height: auto;
+	width: 220px;
+	border-radius: 10px;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 10px 20px;
+	text-align: center;
+}
+
+.popular-section > .wrapper .card img
+{
+	display: block;
+	transition: all 300ms ease-in-out;
+}
+
+.popular-section > .wrapper .card:hover img
+{
+	transform: scale(1.3);
+}
+
+.popular-section > .wrapper .card .caption
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	opacity: 0.7;
+	top: -100%;
+	transition: all 300ms ease-in-out;
+	color: white;
+}
+
+.popular-section > .wrapper .card .caption button
+{
+	position: absolute;
+	bottom: 20px;
+	transform: translateX(-40px);
+	opacity: 1 !important;
+	color: black;
+}
+
+.popular-section > .wrapper .card:hover .caption
+{
+	top: 0%;
+	transition: all 300ms ease-in-out;
+}
+
+.ecommerce-section
+{
+	height: 100%;
+	width: 100%;
+	background-color: #e64a19;
+	padding-top: 20px;
+	color: white;
+}
+
+.ecommerce-info
+{
+	padding-top: 30px !important;
+}
+
+/*atur wrapper pembungkus ikon dan gambar hapenya*/
+.image-ecommerce
+{
+	position: relative;
+}
+
+/*Atur wrapper ikon agar ketengah bagian hape*/
+.cool-select
+{
+	width: 100px;
+	height: 13vw;
+	position: absolute;
+	top: 21%;
+	left: 32%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+/*Atur ukuran ikon agar sesuai dengan breakpoint layar*/
+.image-ecommerce .logo-toped, .image-ecommerce .logo-shopee, .image-ecommerce .logo-olx
+{
+	position: initial;
+	display: inline-block;
+	margin: 8px;
+	height: 3vw;
+	width: 3vw;
+	transition: all 300ms ease-in-out;
+}
+/*Animasi untuk desktop*/
+
+.animate-desktop
+{
+	animation: gerak 0.4s linear;
+	transform: scale(1.2);
+	transition: all 300ms ease-in-out;
+}
+
+.testimonial-section
+{
+	margin: 50px 0px;
+	padding: 0 20px;
+	width: 100%;
+	height: 100%;
+}
+
+.testimonialimage-wrapper
+{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.testimonialimage-wrapper:hover
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.testimonialimage
+{
+	padding: 0;
+	text-align: center;
+	margin: 0 auto;
+	align-self: center;
+	width: 100%;
+	outline: none;
+}
+
+.testimonialimage img
+{
+	display: block;
+	margin: 12px auto 20px;
+	height: 420px;
+	width: 250px;
+}
+
+.locationsection
+{
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	height: 100%;
+	width: 100%;
+	background-color: #e64a19;
+	color: white;
+}
+
+@keyframes gerak {
+  0% {
+    transform: translateX(0px);
+  }
+  20%{
+  	transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60%{
+  	transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100%{
+  	transform: translateX(0px);
+  }
+}
+
+.handphone-pic-d
+{
+	display: initial;
+}
+
+.handphone-pic-m
+{
+	display: none;
+}
+
+.contact-section
+{
+	height: 100%;
+	width: 100%;
+	padding-top: 20px;
+	color: black;
+	text-align: center;
+}
+
+.contact-section .container .row .col a
+{
+	height: 100%;
+	width: auto;
+	position: relative;
+}
+
+.contact-section .container .row .col a img
+{
+	padding: 20px;
+	height: 60%;
+	width: 60%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+	transition: all 300ms ease-in-out;
+}
+
+.contact-section .container .row .col a:hover img
+{
+	transform: scale(1.2);
+	box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.75);
+}
+
+.footer
+{
+	width: 100%;
+	height: auto;
+	color: white;
+	background-color: #D84315;
+	padding: 10px 80px !important;
+	font-size: 14px;
+}
+
+.footer .row .col ul li
+{
+	margin: 10px;
+}
+
+#footer-link
+{
+	display: none;
+}
+
+.logo-sosmed-top
+{
+	display: none;
+}
+
+.logo-sosmed-side
+{
+	display: block;
+}
+
+.tombolhubungi
+{
+	display: none;
+}
+
+#body-content
+{
+	background-color: #f5f5f5;
+	flex: 1 0 auto;
+	overflow-x: hidden;
+	/*animation: transiti 1s linear;*/
+	/*transition: all 1s ease-in-out;*/
+}
+
+
+
+.wrapper-troli /*set anu*/
+{
+	width: 100%;
+	height: auto;
+}
+
+.wrapper-troli img /*centering the img*/
+{
+	position: relative;
+	margin-top: 9%;
+	margin-bottom: -8%;
+	transform: translateY(-50%);
+	border-radius: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#btntokopedia,#btnshopee,#btnolx
+{
+	width: 100%;
+}
+
+.titleproductinside
+{
+	position: sticky;
+	top: -25px;
+	background-color: white;
+	width: 100%;
+	z-index: 5;
+	padding: 20px 0px;
+}
+
+@media screen and (max-width: 992px)
+{
+	.svg1
+	{
+		display: none;
+	}
+
+	.svg2
+	{
+		margin-bottom: -10px;
+	}
+	.svg3
+	{
+		margin-top: -30px;
+	}
+
+	.svg4
+	{
+		margin-bottom: -10px;
+	}
+
+	.svg5
+	{
+		margin-top: 10px;
+	}
+
+	.brand-logo img
+	{
+		margin-top: -4px;
+		padding: 15px;
+	}
+
+	.landing-wrapper .left-inwrapper
+	{
+		padding: 100px 20px;
+		text-align: center;
+	}
+
+	.landing-section
+	{
+		transition: background 1s linear;
+		background-size: cover;
+	}
+
+	.landing-wrapper .left-inwrapper
+	{
+		height: 100%;
+	}
+
+	.wrapper-troli img /*centering the img*/
+	{
+		margin-top: 160px;
+		margin-bottom: -4%;
+	}
+
+	.background1
+	{
+		background-image: url('/assets/images/landing-image1.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.background2
+	{
+		background-image: url('/assets/images/landing-image2.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.background3
+	{
+		background-image: url('/assets/images/landing-image3.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.background4
+	{
+		background-image: url('/assets/images/landing-image4.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.popular-section h1
+	{
+		width: 100%;
+		text-align: center;
+		font-size: 10vw;
+	}
+
+	.popular-section p
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.handphone-pic-m
+	{
+		display: initial;
+	}
+
+	.handphone-pic-d
+	{
+		display: none;
+	}
+
+	.logo-sosmed-top
+	{
+		width: 100%;
+		display: block;
+	}
+
+	.image-ecommerce
+	{
+		transform: translateX(40px);
+		left: -18px;
+	}
+
+	.ecommerce-info
+	{
+		padding: 20px 0px;
+	}
+
+	.ecommerce-info p
+	{
+		text-align: center;
+	}
+
+	.right-inwrapper
+	{
+		display: none !important;
+	}
+
+	/*cool icon responsive setting*/
+
+	.cool-select
+	{
+		width: 100px;
+		height: 13vw;
+		position: absolute;
+		top: 22%;
+		left: 32%;;
+	}
+
+	/*atur logo2nya*/
+	.image-ecommerce .logo-toped, .image-ecommerce .logo-shopee, .image-ecommerce .logo-olx
+	{
+		margin: 5px;
+		height: 8vw;
+		width: 8vw;
+	}
+
+	.animate-mobile
+	{
+		animation: gerak-mobile 3s linear;
+		transition: all 3s ease-in-out;
+	}
+
+	@keyframes gerak-mobile {
+	  0% {
+	    transform: scale(1);
+	  }
+	  10%{
+	  	transform: scale(1.2);
+	  }
+	  20%{
+	  	transform: translateX(-10px);
+	  }
+	  30%{
+	  	transform: translateX(10px);
+	  }
+	  40%{
+	  	transform: translateX(-10px);
+	  }
+	  50%{
+	  	transform: translateX(10px);
+	  }
+	  60%{
+	  	transform: translateX(-10px);
+	  }
+	  70%{
+	  	transform: translateX(10px);
+	  }
+	  80%{
+	  	transform: translateX(-10px);
+	  }
+	  90%{
+	  	transform: translateX(0px);
+	  }
+	  100%
+	  {
+	  	transform: scale(1);
+	  }
+	}
+
+	.contact-section .container .row .col a img
+	{
+		padding: 5px;
+		height: 70px;
+		width: 70px;
+	}
+
+	.logo-sosmed-side
+	{
+		display: none;
+	}
+
+	li a .material-icons
+	{
+		display: none;
+	}
+
+	.buttonwrapper
+	{
+		text-align: center;
+	}
+
+	.tombolhubungi
+	{
+		display: block;
+	}
+
+	.footer
+	{
+		padding: 10px 30px !important;
+	}
+}
