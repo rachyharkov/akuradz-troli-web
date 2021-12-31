@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function()
 	        	{
 	          		slidesToShow: 2,
 	          		arrows: true
-
 	        	}
 	      	},
 	      	{
@@ -159,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function()
   		if ($('.wrapper-troli').hasClass('slick-initialized')) 
 		{
     		$('.wrapper-troli').slick('destroy');
-  		} 
+  		}
 	}
 
 	function initiateBgSlid()
